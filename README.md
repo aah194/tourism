@@ -69,7 +69,7 @@ You can add screenshots here later.
 ## 👤 Author
 
 **Your Name**  
-Student | Web Developer  
+Sumit | Web Developer  
 
 ---
 

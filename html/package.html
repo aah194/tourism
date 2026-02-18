@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages with Discounts</title>
+    <link rel="stylesheet" href="/css/package.css"/> 
+</head>
+<body>
+    <h1>Tour Packages with Discounts</h1>
+    
+    <form>
+        <h2>Mountain Adventure Package</h2>
+        <p><strong>Destination:</strong> Himalayas, Nepal</p>
+        <p><strong>Duration:</strong> 7 days</p>
+        <p><strong>Activities:</strong> Trekking, camping, mountain climbing</p>
+        <p><strong>Original Price:</strong> Rs.6000 per person</p>
+        <p><strong>Discount:</strong> 20%</p>
+        <p><strong>Discounted Price:</strong> Rs.5500 per person</p>
+        <button type="button" class="book-btn">Book Now</button>
+    </form>
+
+    <form>
+        <h2>Tropical Paradise Package</h2>
+        <p><strong>Destination:</strong> Bali, Indonesia</p>
+        <p><strong>Duration:</strong> 10 days</p>
+        <p><strong>Activities:</strong> Beach relaxation, snorkeling, cultural tours</p>
+        <p><strong>Original Price:</strong> Rs.9000 per person</p>
+        <p><strong>Discount:</strong> 15%</p>
+        <p><strong>Discounted Price:</strong> Rs.8000 per person</p>
+        <button type="button" class="book-btn">Book Now</button>
+    </form>
+
+    <form>
+        <h2>Safari Adventure Package</h2>
+        <p><strong>Destination:</strong> Serengeti National Park, Tanzania</p>
+        <p><strong>Duration:</strong> 5 days</p>
+        <p><strong>Activities:</strong> Safari drives, wildlife photography, cultural interactions</p>
+        <p><strong>Original Price:</strong> Rs.10000 per person</p>
+        <p><strong>Discount:</strong> 10% off</p>
+        <p><strong>Price:</strong> Rs.9000 per person (after discount)</p>
+        <button type="button" class="book-btn">Book Now</button>
+    </form>
+
+    <form>
+        <h2>Cultural Immersion Package</h2>
+        <p><strong>Destination:</strong> Kyoto, Japan</p>
+        <p><strong>Duration:</strong> 8 days</p>
+        <p><strong>Activities:</strong> Temple visits, tea ceremonies, traditional performances</p>
+        <p><strong>Original Price:</strong> Rs.12000 per person</p>
+        <p><strong>Discount:</strong> 30% off</p>
+        <p><strong>Price:</strong> Rs.10000 per person (after discount)</p>
+        <button type="button" class="book-btn">Book Now</button>
+    </form>
+    
+    <script>
+        var bookButtons = document.querySelectorAll('.book-btn');
+        bookButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                alert('Booking successful!');
+            });
+        });
+    </script>
+
+<a href="\html\index.html">Home</a>
+</body>
+</html>

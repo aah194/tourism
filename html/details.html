@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details</title>
+    <link rel="stylesheet" href="/css/details.css"/> 
+</head>
+<body>
+    <div id="tourDetails" class="details-container">
+        <!-- Tour details will be dynamically inserted here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            var tourName = getParameterByName('tour');
+            var tourDetailsContainer = document.getElementById('tourDetails');
+
+            switch (tourName) {
+                case 'Safari Adventure':
+                    tourDetailsContainer.innerHTML = `
+                        <div class="tour-details">
+                            <h2>Tour Name: Safari Adventure</h2>
+                            <p>Place: Serengeti National Park, Tanzania</p>
+                            <p>Date: 2024-07-15</p>
+                            <p>Duration: 5 Days</p>
+                            <p>Price:Rs.25000 per person</p>
+                            <button type="button"class="book-btn">Book Now</button><br>
+                        </div>
+                        <div class="tour-image">
+                            <img src="/images/tanzania1.jpg" alt="Safari Adventure">
+                            <img src="/images/tanzania2.jpg" alt="Safari Adventure">
+                            <img src="/images/tanzania3.jpg" alt="Safari Adventure">
+                            <img src="/images/tanzania4.jpg" alt="Safari Adventure">
+                        </div>
+                    `;
+                    break;
+                case 'Island Paradise Escape':
+                    tourDetailsContainer.innerHTML = `
+                        <div class="tour-details">
+                            <h2>Tour Name: Island Paradise Escape</h2>
+                            <p>Place: Maldives</p>
+                            <p>Date: 2024-08-20</p>
+                            <p>Duration: 7 Days</p>
+                            <p>Price: Rs.25000 per person</p>
+                            <button type="button"class="book-btn">Book Now</button><br>
+                        </div>
+                        <div class="tour-image">
+                            <img src="/images/maldives1.webp" alt="Island Paradise Escape Image">
+                            <img src="/images/maldives2.jpg" alt="Island Paradise Escape Image">
+                            <img src="/images/maldives3.jpeg" alt="Island Paradise Escape Image">
+                            <img src="/images/maldives4.jpg" alt="Island Paradise Escape Image">
+                        </div>
+                    `;
+                    break;
+                case 'Alpine Adventure in the Swiss Alps':
+                    tourDetailsContainer.innerHTML = `
+                        <div class="tour-details">
+                            <h2>Tour Name: Alpine Adventure in the Swiss Alps</h2>
+                            <p>Place: Swiss Alps, Switzerland</p>
+                            <p>Date: 2024-10-05</p>
+                            <p>Duration: 8 Days</p>
+                            <p>Price: Rs.25000 per person</p>
+                            <button type="button"class="book-btn">Book Now</button><br>
+                        </div>
+                        <div class="tour-image">
+                            <img src="/images/swiss1.jpg" alt="Alpine Adventure Image">
+                            <img src="/images/swiss2.avif" alt="Alpine Adventure Image">
+                            <img src="/images/swiss3.webp" alt="Alpine Adventure Image">
+                            <img src="/images/swiss4.jpeg" alt="Alpine Adventure Image">
+                        </div>
+                    `;
+                    break;
+                case 'Cultural Exploration in Kyoto':
+                    tourDetailsContainer.innerHTML = `
+                        <div class="tour-details">
+                            <h2>Tour Name: Cultural Exploration in Kyoto</h2>
+                            <p>Place: Kyoto, Japan</p>
+                            <p>Date: 2024-09-10</p>
+                            <p>Duration: 6 Days</p>
+                            <p>Price: Rs.28000 per person</p><br>
+                            <button type="button"class="book-btn">Book Now</button>
+                        </div>
+                        <div class="tour-image">
+                            <img src="/images/kyotoi1.jpg" alt="1">
+                            <img src="/images/kyotoi2.jpg" alt="2">
+                            <img src="/images/kyotoi5.webp" alt="3">
+                            <img src="/images/kyotoi6.png" alt="4">
+                        </div>
+                    `;
+                    break;
+                default:
+                    tourDetailsContainer.innerHTML = '<p>No details found for this tour.</p>';
+            }
+            var bookButtons = document.querySelectorAll('.book-btn');
+            bookButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    alert('Booking successful!');
+                });
+            });
+        });
+    </script>
+    <a href="\html\index.html">Home</a>
+    <a href="\html\tours.html">More Tours</a>
+</body>
+</html>

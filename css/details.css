@@ -1,0 +1,57 @@
+/* Container for tour details and images */
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Tour details */
+.tour-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.tour-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tour-details p {
+    margin-bottom: 10px;
+}
+
+/* Tour images */
+.tour-image {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tour-image img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+/* Links and buttons */
+a,
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+a:hover,
+button:hover {
+    background-color: #0056b3;
+}

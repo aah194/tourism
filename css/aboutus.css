@@ -1,0 +1,62 @@
+/* Styles for the About Us page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mission,
+#what-sets-us-apart,
+#our-commitment,
+#start-your-journey {
+    margin-bottom: 40px;
+}
+
+#mission h2,
+#what-sets-us-apart h2,
+#our-commitment h2,
+#start-your-journey h2 {
+    color: #007bff;
+}
+
+#mission p,
+#what-sets-us-apart li,
+#our-commitment p,
+#start-your-journey p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+button,
+a {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+a:hover {
+    background-color: #0056b3;
+}

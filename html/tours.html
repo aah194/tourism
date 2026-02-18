@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages</title>
+    <link rel="stylesheet" href="/css/tours.css"/> 
+</head>
+<body>
+    <div class="tour" onclick="redirectToDetails('Safari Adventure')">
+        <div class="tour-image">
+            <img src="/images/serengeti2.jpg" alt="Safari Adventure">
+            <img src="/images/serengeti1.jpg" alt="Safari Adventure">
+        </div>
+        <div class="tour" onclick="redirectToDetails('Island Paradise Escape')">
+            <div class="tour-details">
+                <h2>Tour Name: Safari Adventure</h2>
+                <p>Place: Serengeti National Park, Tanzania</p>
+                <p>Date: 2024-07-15</p>
+                <button class="more-info-btn">More Info</button>
+            </div>           
+        </div>
+    </div> 
+    
+    <div class="tour" onclick="redirectToDetails('Island Paradise Escape')">
+        <div class="tour-image">
+            <img src="\images\bali2.webp" alt="Island Paradise Escape">
+            <img src="\images\bali1.jpeg" alt="Island Paradise Escape">
+        </div>
+        <div class="tour" onclick="redirectToDetails('Island Paradise Escape')">
+            <div class="tour-details">
+                <h2>Tour Name: Island Paradise Escape</h2>
+                <p>Place: Maldives</p>
+                <p>Date: 2024-08-20</p>
+                <button class="more-info-btn">More Info</button>
+            </div>           
+        </div>
+    </div>    
+    <div class="tour" onclick="redirectToDetails('Alpine Adventure in the Swiss Alps')">
+        <div class="tour-image">
+            <img src="\images\switzerland.jpg" alt="Alpine Adventure in the Swiss Alps">
+            <img src="\images\switzerland2.webp" alt="Alpine Adventure in the Swiss Alps">
+        </div>
+        <div class="tour" onclick="redirectToDetails('Alpine Adventure in the Swiss Alps')">
+            <div class="tour-details">
+                <h2>Tour Name: Alpine Adventure in the Swiss Alps</h2>
+                <p>Place:Swiss Alps, Switzerland</p>
+                <p>Date: 2024-10-05</p>        
+                <button class="more-info-btn">More Info</button>
+            </div>           
+        </div>
+    </div>   
+    <div class="tour" onclick="redirectToDetails('Cultural Exploration in Kyoto')">
+        <div class="tour-image">
+            <img src="\images\kyota1.jpeg" alt="Cultural Exploration in Kyoto">
+            <img src="\images\kyota3.jpg" alt="Cultural Exploration in Kyoto">
+        </div>
+            <div class="tour" onclick="redirectToDetails('Cultural Exploration in Kyoto')">
+                <div class="tour-details">
+                    <h2>Tour Name: Cultural Exploration in Kyoto</h2>
+                    <p>Place: Kyoto, Japan</p>
+                    <p>Date: 2024-09-10</p>
+                    <button class="more-info-btn">More Info</button>
+                </div>           
+            </div>
+    </div>   
+
+    <script>
+        function redirectToDetails(tourName) {
+            window.location.href = 'details.html?tour=' + encodeURIComponent(tourName);
+        }
+    </script>
+</body>
+</html>

@@ -68,7 +68,6 @@ You can add screenshots here later.
 
 ## 👤 Author
 
-**Your Name**  
 Sumit 
 
 ---
